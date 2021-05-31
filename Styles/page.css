@@ -1,5 +1,14 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  position: relative;
+}
+
+main {
+  background-color: #fff;
+  width: 90%;
+  margin: auto;
 }
 
 img {
@@ -10,9 +19,10 @@ img {
   border: solid black 1px;
 }
 
-.back {
-  margin-left: 10%;
-  color: black;
+.home {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 5%;
 }
 
 h1 {
@@ -46,20 +56,26 @@ a {
   h1 {
     font-size: 30px;
     width: 60%;
-    margin-left: 20%;
+    margin-left: 10%;
+  }
+
+  main {
+    max-width: 1300px;
   }
 
   h2 {
     font-size: 26px;
-    margin-left: 20%;
+    margin-left: 10%;
   }
 
-  .back {
-    margin-left: 20%;
+  .home {
+    font-size: 24px;
+    text-align: center;
+    margin-left: 10%;
   }
 
   img {
-    width: 60%;
+    width: 80%;
   }
 
   a p {
