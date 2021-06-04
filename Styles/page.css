@@ -1,3 +1,16 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  height: 60px;
+  background-image: url("/Images/header2.jpg");
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+}
+
 main {
   background-color: #fff;
   width: 90%;
@@ -9,13 +22,17 @@ img {
   height: auto;
   display: block;
   margin: auto;
-  border: solid black 1px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 35px;
 }
 
 .home {
   color: #fff;
   font-size: 18px;
-  margin-left: 5%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  margin-top: 15px;
+  margin-right: 40px;
 }
 
 h1 {
@@ -31,11 +48,18 @@ h2 {
   margin-left: 10%;
 }
 
+.report {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 12px;
+}
+
 a p {
   font-size: 20px;
   width: 50%;
   padding: 2%;
-  background-color: #23d5ab;
+  background-image: url("/Images/header2.jpg");
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
   color: #fff;
   text-align: center;
   margin-left: 23%;
@@ -56,15 +80,20 @@ a {
     max-width: 1300px;
   }
 
+  header {
+    height: 100px;
+    width: 100%;
+  }
+
   h2 {
     font-size: 26px;
     margin-left: 10%;
   }
 
   .home {
-    font-size: 24px;
-    text-align: center;
-    margin-left: 10%;
+    font-size: 28px;
+    margin-top: 25px;
+    margin-right: 100px;
   }
 
   img {
@@ -75,5 +104,9 @@ a {
     width: 20%;
     padding: 1%;
     margin-left: 39%;
+  }
+
+  .report {
+    font-size: 18px;
   }
 }

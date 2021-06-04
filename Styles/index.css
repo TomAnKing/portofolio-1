@@ -1,15 +1,21 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
+  width: 100%;
+  margin: 0;
+}
+
+header {
   position: relative;
+  height: 60px;
+  background-image: url("/Images/header2.jpg");
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
 }
 
 h1 {
   font-size: 28px;
   text-align: center;
   margin-top: 4%;
-  color: #fff;
+  color: black;
   font-weight: normal;
 }
 
@@ -17,7 +23,17 @@ h2 {
   font-size: 20px;
   text-align: center;
   font-weight: normal;
+  color: black;
+}
+
+.home {
   color: #fff;
+  font-size: 18px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  margin-top: 15px;
+  margin-right: 40px;
 }
 
 .pageGrid {
@@ -31,6 +47,8 @@ h2 {
 
 .webPage {
   background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 100%;
 }
 
 img {
@@ -51,6 +69,11 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    height: 100px;
+    width: 100%;
+  }
+
   h1 {
     font-size: 60px;
   }
@@ -59,10 +82,27 @@ a {
     font-size: 40px;
   }
 
+  .webPage {
+    transition: 0.5s;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .webPage:hover {
+    width: 100%;
+  }
+
+  .home {
+    font-size: 28px;
+    margin-top: 25px;
+    margin-right: 100px;
+  }
+
   .pageGrid {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     max-width: 1500px;
     grid-column-gap: 5%;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
   }
